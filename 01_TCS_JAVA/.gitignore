@@ -1,0 +1,5 @@
+*.class
+
+# Ignore compiled files
+/bin/
+/out/
