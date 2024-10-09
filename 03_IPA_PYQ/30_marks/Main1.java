@@ -104,7 +104,7 @@ public class Main1 {
 
     public static Student stud(Student arr[]) {
 
-        int max = arr[0].getAge();
+        int max = arr[0].age;  //int max=arr[0].getAge() we used here age because it does not have acces specifier
         Student obj = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i].getAge() > max) {
