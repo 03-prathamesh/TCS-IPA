@@ -118,16 +118,16 @@ public class Solution {
 
          Employee new_arr[]=new Employee[0];
         //first sort the salary
-            // for(int i=0;i<arr.length;i++){
-            //     for(int j=1;j<arr.length;j++){
-            //         if(arr[j-1].getSalary()>arr[j].getSalary()){
-            //             Employee temp=arr[j-1];
-            //             arr[j-1]=arr[j];
-            //             arr[j]=temp;
-            //         }
-            //     }
-            // }
-              Arrays.sort(arr, (e1, e2) -> Double.compare(e1.getSalary(), e2.getSalary()));
+            for(int i=0;i<arr.length;i++){
+                for(int j=1;j<arr.length;j++){
+                    if(arr[j-1].getSalary()>arr[j].getSalary()){
+                        Employee temp=arr[j-1];
+                        arr[j-1]=arr[j];
+                        arr[j]=temp;
+                    }
+                }
+            }
+              //Arrays.sort(arr, (e1, e2) -> Double.compare(e1.getSalary(), e2.getSalary()));
 
          int count=0;
         double min=arr[0].getSalary();
