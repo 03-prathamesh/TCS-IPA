@@ -66,15 +66,19 @@ public class Solution{
      
      public static Fruits findMaximumPriceByRatings(Fruits arr[],int ratings){
          int low=0;
+         //Fruits f;
          for(int i=0;i<arr.length;i++){
              if(arr[i].getPrice()>low && arr[i].getRatings()>ratings){
                  low=arr[i].getPrice();
+                
              }
          }
          
          for(int i=0;i<arr.length;i++){
              if(arr[i].getPrice()==low){
+                //f=arr[i];
                  return arr[i];
+                 //return f;
                  
              }
          }
