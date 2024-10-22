@@ -106,10 +106,12 @@ public class AutonomousCarProblem {
         for(int i=0;i<c.length;i++){
             if(c[i].getBrand().equalsIgnoreCase(brand)){
                a1.add(c[i]);
+               //making changes here will directly make the changes in oriitnal object, this is not copy this is copy of reference
                int rating=(c[i].getTestPassed()*100)/c[i].getTestConducted();
                if(rating>=18){
                   c[i].setGrade("A1");
-
+               //making changes here will directly make the changes in oriitnal object, this is not copy this is copy of reference
+                  
                }
                else{
                   c[i].setGrade("B2");
