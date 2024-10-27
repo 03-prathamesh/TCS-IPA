@@ -42,6 +42,7 @@ public class AntenaProblem{
                  String c=sc.nextLine();
                  Double d=sc.nextDouble();
                  sc.nextLine();
+                
                  an[i]=new Antena(a,b,c,d);
 
              }
