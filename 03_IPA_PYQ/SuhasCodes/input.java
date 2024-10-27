@@ -18,12 +18,13 @@ public class input{
         // sc.nextLine();
         p[0]=new Player(a);
         int b=sc.nextInt();
-        sc.nextLine(); // try to comment this to get the difference and run when commenting and uncommenting this
+        //sc.nextLine(); // try to comment this to get the difference and run when commenting and uncommenting this
         p[1]=new Player(b);
 
         System.out.print("Enter your name: "); //readin after p[1] of int 
-        
-        String name=sc.nextLine();
+
+        String name=sc.nextLine();  //very very imp here try to comment this and uncomment following name
+        // int name=sc.nextInt();
        System.out.println(p[0].playerId);
        System.out.println(p[1].playerId);
        System.out.println(name);
