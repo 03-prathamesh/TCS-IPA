@@ -35,7 +35,7 @@ public class AntenaProblem{
     public static void main(String [] args){
              Scanner sc=new Scanner(System.in);
              Antena an[]=new Antena[4];
-             for(int i=0;i<4;i++){
+             for(int i=0;i<an.length;i++){
                  int a=sc.nextInt();
                  sc.nextLine();
                  String b=sc.nextLine();
