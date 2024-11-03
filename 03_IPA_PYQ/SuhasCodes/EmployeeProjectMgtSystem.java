@@ -233,7 +233,7 @@ public class EmployeeProjectMgtSystem {
 }
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in); 
         List<Employees> employees=new ArrayList<>();
         int n=sc.nextInt(); sc.nextLine();
         for(int i=0;i<n;i++){
